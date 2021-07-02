@@ -1,6 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
 
+html {
+  box-sizing: border-box;
+}
+
 * {
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Fraunces', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+header {
+  padding: 20px 30px;
+  background: url(./images/desktop/image-header.jpg) no-repeat bottom;
+  background-size: cover;
+  height: 100vh;
+}
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links li {
+  list-style: none;
+  padding-right: 30px;
+}
+
+.links a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.links a.contact {
+  background: hsl(0, 0%, 100%);
+  padding: 0.8rem 1.8rem;
+  border-radius: 100px;
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+}
+
+.intro {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
 }
